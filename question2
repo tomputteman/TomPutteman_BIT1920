@@ -1,0 +1,16 @@
+UNF: Personnel(Personnel number (PK),Name,Date of birth, lab code(PK), lab name, research code(PK), research description, research supervisor)
+
+1NF: eliminate repeating groups in individual tables 
+     It's the same as the UNF here
+1NF: Personnel(Personnel number (PK),Name,Date of birth, lab code(PK), lab name, research code(PK), research description, research supervisor)
+
+2NF:  Every non-prime attribute of the table is dependent on the whole key of every candidate key 
+      We need to split the tables here
+
+2NF: Personnel (Personnel number (PK), Name, Date of birth)
+     Lab (Lab code (PK), lab name)
+     Research(research code (PK), research description, research supervisor)
+
+3NF:  Every non-prime attribute is non-transitively dependent on every key 
+      This is not the case here so 2NF = 3NF
+
