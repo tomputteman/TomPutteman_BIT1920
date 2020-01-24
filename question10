@@ -1,0 +1,2 @@
+db.getCollection('bioinf_mongo_examen').aggregate([{percentage_of_side_effects: {$avg}}
+    {match:{count:{$gt:10}}}])
