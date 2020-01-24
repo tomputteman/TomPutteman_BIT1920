@@ -1,0 +1,17 @@
+mysql> select count(*) from exon;
++----------+
+| count(*) |
++----------+
+|   642590 |
++----------+
+1 row in set (0.06 sec)
+
+mysql> select count(*) from exon_transcript;
++----------+
+| count(*) |
++----------+
+|  1178393 |
++----------+
+1 row in set (0.12 sec)
+
+There are more rows in transcripts table because an exon can have multiple transcripts
