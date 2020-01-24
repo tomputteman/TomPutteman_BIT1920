@@ -1,0 +1,2 @@
+mysql> select gene_name, count(exon_id) from gene join exon on gene.seq_region_start=exon.seq_region_start group by gene_name limit 1;
+
