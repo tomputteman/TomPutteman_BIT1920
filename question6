@@ -1,0 +1,8 @@
+mysql> select chromosome from gene where description like "%Breast cancer%" order by chromosome desc limit 1;
++------------+
+| chromosome |
++------------+
+| 6          |
++------------+
+1 row in set (0.04 sec)
+
