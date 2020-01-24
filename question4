@@ -1,0 +1,7 @@
+mysql> select gene_name, seq_region_end from gene order by seq_region_end desc limit 1 offset 2;
++-----------+----------------+
+| gene_name | seq_region_end |
++-----------+----------------+
+| U6        |      249206994 |
++-----------+----------------+
+1 row in set (0.02 sec)
